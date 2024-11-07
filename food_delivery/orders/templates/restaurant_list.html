@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+</head>
+<body>
+<header><h1>Available Restaurants</h1></header>
+<main>
+{% for restaurant in restaurants %}
+<div class="restaurant-card">
+    <h4>{{ restaurant.1 }}</h4> <!-- Assuming restaurant name is in the first column -->
+    <p>{{ restaurant.2 }}</p> <!-- Assuming address is in the second column -->
+</div>
+{% endfor %}
+</main>
+<footer><p>&copy; 2024 Food Delivery App</p></footer>
+</body>
+</html>
